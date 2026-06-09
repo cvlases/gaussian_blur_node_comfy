@@ -15,8 +15,8 @@ class GaussianBlurNode:
         return {
             "required": {
                 "image":       ("IMAGE",),
-                "kernel_size": ("INT",   {"default": 5,   "min": 1, "max": 31, "step": 2}),
-                "sigma":       ("FLOAT", {"default": 0.0, "min": 0.0, "max": 10.0, "step": 0.1}),
+                "kernel_size": ("INT",   {"default": 5,   "min": 1, "max": 101, "step": 2}),
+                "sigma":       ("FLOAT", {"default": 0.0, "min": 0.0, "max": 50.0, "step": 0.1}),
             }
         }
 
@@ -56,5 +56,5 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "GaussianBlur": "Gaussian Blur 🌫️",
+    "GaussianBlur": "▓▓▓▓▓▓ Gaussian Blur ▓▓▓▓▓▓",
 }
